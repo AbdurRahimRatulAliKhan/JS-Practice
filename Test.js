@@ -129,9 +129,47 @@
 // }
 // console.log(value);
 
-const value = getRndInteger();
+// const value = getRndInteger();
 
-function getRndInteger(){
-    return Boolean(10 > 9);
+// function getRndInteger(){
+//     return Boolean("false");
+// }
+// console.log(value);
+
+
+// const value = getRndInteger(10 / "Hallo");
+
+// function getRndInteger(x){
+//     return Boolean(x);
+// }
+// console.log(value);
+
+
+// let x = false;
+// let y = new Boolean(false);
+
+// console.log(typeof x);
+// console.log(typeof y);
+// console.log(x == y);
+// console.log(x === y);
+
+
+let age = Number(25);
+
+if(isNaN(age)){
+    votable = "Input is not a number."
+}else{
+    votable = (age < 18)? "Too Young" : "Old enough";
 }
-console.log(value);
+
+console.log(votable);
+
+let name  = null;
+let text = "Missing";
+let result = name ?? text;
+
+console.log(result);
+
+
+const car = {type:"Fiat", model:"500", color:"White"};
+console.log(car?.name);
