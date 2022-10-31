@@ -122,10 +122,16 @@
 // }
 // console.log(value);
 
-const value = getRndInteger(1, 10);
+// const value = getRndInteger(1, 10);
 
-function getRndInteger(min, max){
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+// function getRndInteger(min, max){
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// console.log(value);
+
+const value = getRndInteger();
+
+function getRndInteger(){
+    return Boolean(10 > 9);
 }
 console.log(value);
-
