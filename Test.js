@@ -173,3 +173,13 @@ console.log(result);
 
 const car = {type:"Fiat", model:"500", color:"White"};
 console.log(car?.name);
+
+let hour = new Date().getHours();
+
+if(hour < 18){
+    outputHour = "Good Day";
+}else{
+    outputHour = "Good Evening"
+}
+
+console.log(outputHour);
