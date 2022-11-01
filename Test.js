@@ -324,13 +324,33 @@
 
 
 
-const cars = ["BMW", "Volvo", "Saab", "Ford"];
-let i = 0;
-let text = " ";
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+// let text = " ";
 
-while (i < cars.length) {
-        text += cars[i] + " ";
-        i++;
-}
+// while (i < cars.length) {
+//         text += cars[i] + " ";
+//         i++;
+// }
 
-console.log(text);
+// console.log(text);
+let text = "";
+for (let index = 0; index < 10; index++) {
+    if (index === 3) {
+        break;
+        
+    }
+    text = index;
+    console.log(text);
+    }
+
+
+
+    let text1 = "";
+for (let index = 0; index < 10; index++) {
+    if (index === 3) {
+        continue;
+    }
+    text1 = index;
+    console.log(text1);
+    }
