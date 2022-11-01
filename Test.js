@@ -154,93 +154,107 @@
 // console.log(x === y);
 
 
-let age = Number(25);
+// let age = Number(25);
 
-if(isNaN(age)){
-    votable = "Input is not a number."
-}else{
-    votable = (age < 18)? "Too Young" : "Old enough";
+// if(isNaN(age)){
+//     votable = "Input is not a number."
+// }else{
+//     votable = (age < 18)? "Too Young" : "Old enough";
+// }
+
+// console.log(votable);
+
+// let name  = null;
+// let text = "Missing";
+// let result = name ?? text;
+
+// console.log(result);
+
+
+// const car = {type:"Fiat", model:"500", color:"White"};
+// console.log(car?.name);
+
+// let hour = new Date().getHours();
+
+// if(hour < 18){
+//     outputHour = "Good Day";
+// }else{
+//     outputHour = "Good Evening"
+// }
+
+// console.log(outputHour);
+
+
+// let day;
+// switch(new Date().getDay()){
+//     case 0: 
+//     day =  "Sunday";
+//     break;
+//     case 1: 
+//     day =  "Monday";
+//     break;
+//     case 2: 
+//     day =  "Tuesday";
+//     break;
+//     case 3: 
+//     day =  "Wednesday";
+//     break;
+//     case 4: 
+//     day =  "Thursday";
+//     break;
+//     case 5: 
+//     day =  "Friday";
+//     break;
+//     case 6: 
+//     day =  "Saturday";
+//     break;
+//     default:
+//     day = "Looking forward to the Weekend";
+// }
+
+// console.log(day);
+
+
+
+// let x = 0;
+// switch(x){
+//     case 0: 
+//     day =  "Sunday";
+//     break;
+//     case 1: 
+//     day =  "Monday";
+//     break;
+//     case 2: 
+//     day =  "Tuesday";
+//     break;
+//     case 3: 
+//     day =  "Wednesday";
+//     break;
+//     case 4: 
+//     day =  "Thursday";
+//     break;
+//     case 5: 
+//     day =  "Friday";
+//     break;
+//     case 6: 
+//     day =  "Saturday";
+//     break;
+//     default:
+//     day = "Looking forward to the Weekend";
+// }
+
+// console.log(day);
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+let text = " ";
+for(let i = 0; i < cars.length; i++){
+    text += cars[i] + " / ";
 }
 
-console.log(votable);
-
-let name  = null;
-let text = "Missing";
-let result = name ?? text;
-
-console.log(result);
+console.log(text);
 
 
-const car = {type:"Fiat", model:"500", color:"White"};
-console.log(car?.name);
-
-let hour = new Date().getHours();
-
-if(hour < 18){
-    outputHour = "Good Day";
-}else{
-    outputHour = "Good Evening"
+for (var i = 0; i < 10; i++) {
+    // some statements
+    console.log(i);
 }
-
-console.log(outputHour);
-
-
-let day;
-switch(new Date().getDay()){
-    case 0: 
-    day =  "Sunday";
-    break;
-    case 1: 
-    day =  "Monday";
-    break;
-    case 2: 
-    day =  "Tuesday";
-    break;
-    case 3: 
-    day =  "Wednesday";
-    break;
-    case 4: 
-    day =  "Thursday";
-    break;
-    case 5: 
-    day =  "Friday";
-    break;
-    case 6: 
-    day =  "Saturday";
-    break;
-    default:
-    day = "Looking forward to the Weekend";
-}
-
-console.log(day);
-
-
-
-let x = 0;
-switch(x){
-    case 0: 
-    day =  "Sunday";
-    break;
-    case 1: 
-    day =  "Monday";
-    break;
-    case 2: 
-    day =  "Tuesday";
-    break;
-    case 3: 
-    day =  "Wednesday";
-    break;
-    case 4: 
-    day =  "Thursday";
-    break;
-    case 5: 
-    day =  "Friday";
-    break;
-    case 6: 
-    day =  "Saturday";
-    break;
-    default:
-    day = "Looking forward to the Weekend";
-}
-
-console.log(day);
