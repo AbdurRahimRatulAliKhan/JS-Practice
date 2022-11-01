@@ -245,16 +245,29 @@
 
 // console.log(day);
 
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// let text = " ";
+// for(let i = 0; i < cars.length; i++){
+//     text += cars[i] + " / ";
+// }
+
+// console.log(text);
+
+
+// for (var i = 0; i < 10; i++) {
+//     // some statements
+//     console.log(i);
+// }
+
+//const person = {fname: "John ", lname: "Doe ", age: 25};
 const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-let text = " ";
-for(let i = 0; i < cars.length; i++){
-    text += cars[i] + " / ";
+let Text = " ";
+//for(let x in person){
+cars.forEach(myFunction);
+
+function myFunction(value, index, cars){
+    //Text += person[x];
+    Text += "/ " + value;
 }
 
-console.log(text);
-
-
-for (var i = 0; i < 10; i++) {
-    // some statements
-    console.log(i);
-}
+console.log(Text);
