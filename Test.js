@@ -274,22 +274,63 @@
 
 
 
-//const person = {fname: "John ", lname: "Doe ", age: 25};
-const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-let Text = " ";
-for(let x of cars){
-    Text += x + " ";
-    //console.log(Text);
+// //const person = {fname: "John ", lname: "Doe ", age: 25};
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// let Text = " ";
+// for(let x of cars){
+//     Text += x + " ";
+//     //console.log(Text);
+// }
+
+// console.log(Text);
+
+
+// const language = "JavaScript";
+// let Text1 = " ";
+// for(let x of language){
+//     Text1 += x + " ";
+//     //console.log(Text);
+// }
+
+// console.log(Text1.toUpperCase());
+// let i = 0;
+// text = " ";
+// while( i < 10){
+//     text += i;
+//     i++;
+// }
+
+// console.log(text);
+
+// let text11 = " ";
+// let j = 0;
+// do {
+//     text11 += j;
+//     j++;
+// } while (j < 10);
+
+// console.log(text11);
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+// let text = " ";
+
+// for(; i < cars.length; ){
+//     text += cars[i] + " ";
+//     i++;
+// }
+
+// console.log(text);
+
+
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i = 0;
+let text = " ";
+
+while (i < cars.length) {
+        text += cars[i] + " ";
+        i++;
 }
 
-console.log(Text);
-
-
-const language = "JavaScript";
-let Text1 = " ";
-for(let x of language){
-    Text1 += x + " ";
-    //console.log(Text);
-}
-
-console.log(Text1.toUpperCase());
+console.log(text);
