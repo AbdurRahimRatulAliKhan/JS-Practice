@@ -260,14 +260,36 @@
 // }
 
 //const person = {fname: "John ", lname: "Doe ", age: 25};
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// let Text = " ";
+// //for(let x in person){
+// cars.forEach(myFunction);
+
+// function myFunction(value, index, cars){
+//     //Text += person[x];
+//     Text += " / " + value;
+// }
+
+// console.log(Text);
+
+
+
+//const person = {fname: "John ", lname: "Doe ", age: 25};
 const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 let Text = " ";
-//for(let x in person){
-cars.forEach(myFunction);
-
-function myFunction(value, index, cars){
-    //Text += person[x];
-    Text += "/ " + value;
+for(let x of cars){
+    Text += x + " ";
+    //console.log(Text);
 }
 
 console.log(Text);
+
+
+const language = "JavaScript";
+let Text1 = " ";
+for(let x of language){
+    Text1 += x + " ";
+    //console.log(Text);
+}
+
+console.log(Text1.toUpperCase());
