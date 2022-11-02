@@ -334,23 +334,35 @@
 // }
 
 // console.log(text);
-let text = "";
-for (let index = 0; index < 10; index++) {
-    if (index === 3) {
-        break;
+// let text = "";
+// for (let index = 0; index < 10; index++) {
+//     if (index === 3) {
+//         break;
         
-    }
-    text = index;
-    console.log(text);
-    }
+//     }
+//     text = index;
+//     console.log(text);
+//     }
 
 
 
-    let text1 = "";
-for (let index = 0; index < 10; index++) {
-    if (index === 3) {
-        continue;
+//     let text1 = "";
+// for (let index = 0; index < 10; index++) {
+//     if (index === 3) {
+//         continue;
+//     }
+//     text1 = index;
+//     console.log(text1);
+//     }
+
+
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let Text = "";
+    list: {
+        Text += cars[0] + " ";
+        Text += cars[1] + " ";
+        break list;
+        Text += cars[2] + " ";
+        Text += cars[3] + " ";
     }
-    text1 = index;
-    console.log(text1);
-    }
+    console.log(Text);
