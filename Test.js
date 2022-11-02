@@ -385,10 +385,28 @@
     // console.log(text111);
 
 
-    const fruits = new Map([["a", 500], ["b", 200], ["c", 100]]);
-    let text111 = "";
+    // const fruits = new Map([["a", 500], ["b", 200], ["c", 100]]);
+    // let text111 = "";
 
-    for (const x of fruits){
-        text111 += " " + x;
+    // for (const x of fruits){
+    //     text111 += " " + x;
+    // }
+    // console.log(text111);
+
+
+    const letters = new Set();
+    const a = "a";
+    const b = "b";
+    const c = "c";
+
+    let text = "";
+    
+    letters.add(a);
+    letters.add(b);
+    letters.add(c);
+
+    for (const x of letters.values()) {
+        text += " " + x;
     }
-    console.log(text111);
+
+    console.log(text);
