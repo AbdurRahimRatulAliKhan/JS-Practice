@@ -356,13 +356,39 @@
 //     }
 
 
-    const cars = ["BMW", "Volvo", "Saab", "Ford"];
-    let Text = "";
-    list: {
-        Text += cars[0] + " ";
-        Text += cars[1] + " ";
-        break list;
-        Text += cars[2] + " ";
-        Text += cars[3] + " ";
+    // const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    // let Text = "";
+    // list: {
+    //     Text += cars[0] + " ";
+    //     Text += cars[1] + " ";
+    //     break list;
+    //     Text += cars[2] + " ";
+    //     Text += cars[3] + " ";
+    // }
+    // console.log(Text);
+
+    // const fruits = new Set(["a", "b", "c"]);
+    // let text111 = "";
+
+    // for (const x of fruits){
+    //     text111 += " " + x;
+    // }
+    // console.log(text111);
+
+
+    // const fruits = ["a", "b", "c"];
+    // let text111 = "";
+
+    // for (const x of fruits){
+    //     text111 += " " + x;
+    // }
+    // console.log(text111);
+
+
+    const fruits = new Map([["a", 500], ["b", 200], ["c", 100]]);
+    let text111 = "";
+
+    for (const x of fruits){
+        text111 += " " + x;
     }
-    console.log(Text);
+    console.log(text111);
