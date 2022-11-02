@@ -410,3 +410,36 @@
     }
 
     console.log(text);
+
+
+    // const fruits = new Map([
+    //     ["apples", 500], 
+    //     ["bananas", 300],
+    //     ["oranges", 200]
+    // ]);
+
+    const fruits = new Map();
+
+    fruits.set("apples", 500);
+    fruits.set("bananas", 300);
+    fruits.set("oranges", 200);
+
+    let gets = fruits.get("apples");
+    let deletes = fruits.delete("apples");
+    let sizes = fruits.size;
+    let hsapple = fruits.has("apples");
+
+    let TEXT = "";
+    // fruits.forEach(function (value, key){
+    //     TEXT += " " + value; 
+    // });
+    for (const y of fruits.entries()) {
+        TEXT += " " + y; 
+    }
+
+
+    console.log(gets);
+    console.log(deletes);
+    console.log(hsapple);
+    console.log(sizes);
+    console.log(TEXT);
