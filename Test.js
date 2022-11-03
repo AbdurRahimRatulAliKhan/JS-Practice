@@ -447,25 +447,37 @@
 
 
     
-    console.log(typeof "John");
-    console.log(typeof 3.14);
-    console.log(typeof NaN);
-    console.log(typeof false);
-    console.log(typeof [1]);
-    console.log(typeof {name: 'John', age: 34});
-    console.log(typeof new Date());
-    console.log(typeof function (){});
-    console.log(typeof myCar);
-    console.log(typeof null);
+//     console.log(typeof "John");
+//     console.log(typeof 3.14);
+//     console.log(typeof NaN);
+//     console.log(typeof false);
+//     console.log(typeof [1]);
+//     console.log(typeof {name: 'John', age: 34});
+//     console.log(typeof new Date());
+//     console.log(typeof function (){});
+//     console.log(typeof myCar);
+//     console.log(typeof null);
 
 
-    console.log("John".constructor);
-    console.log((3.14).constructor);
-    console.log(NaN.constructor);
-    console.log(false.constructor);
-    console.log([1].constructor);
-    console.log({name: 'John', age: 34}.constructor);
-    console.log(new Date().constructor);
-    console.log(function (){}.constructor);
-//    console.log(myCar.constructor);
-//    console.log(null.constructor);
+//     console.log("John".constructor);
+//     console.log((3.14).constructor);
+//     console.log(NaN.constructor);
+//     console.log(false.constructor);
+//     console.log([1].constructor);
+//     console.log({name: 'John', age: 34}.constructor);
+//     console.log(new Date().constructor);
+//     console.log(function (){}.constructor);
+// //    console.log(myCar.constructor);
+// //    console.log(null.constructor);
+
+
+
+//const fruits = ["Banana", "Apple", "Mango", "Guava"];
+//const fruits = "jdfhsjdhfjksadhjkfh";
+const fruits = new Date();
+console.log(isArray(fruits));
+
+function isArray(myArray) {
+//    return myArray.constructor.toString().indexOf("Array") > -1;
+    return myArray.constructor === Date;
+}
