@@ -457,3 +457,15 @@
     console.log(typeof function (){});
     console.log(typeof myCar);
     console.log(typeof null);
+
+
+    console.log("John".constructor);
+    console.log((3.14).constructor);
+    console.log(NaN.constructor);
+    console.log(false.constructor);
+    console.log([1].constructor);
+    console.log({name: 'John', age: 34}.constructor);
+    console.log(new Date().constructor);
+    console.log(function (){}.constructor);
+//    console.log(myCar.constructor);
+//    console.log(null.constructor);
