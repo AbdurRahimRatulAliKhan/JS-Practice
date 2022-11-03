@@ -474,10 +474,38 @@
 
 //const fruits = ["Banana", "Apple", "Mango", "Guava"];
 //const fruits = "jdfhsjdhfjksadhjkfh";
-const fruits = new Date();
-console.log(isArray(fruits));
+// const fruits = new Date();
+// console.log(isArray(fruits));
 
-function isArray(myArray) {
-//    return myArray.constructor.toString().indexOf("Array") > -1;
-    return myArray.constructor === Date;
-}
+// function isArray(myArray) {
+// //    return myArray.constructor.toString().indexOf("Array") > -1;
+//     return myArray.constructor === Date;
+// }
+
+// //let dkfkd = undefined;
+// let dkfkd = "";
+// console.log(typeof dkfkd);
+
+// let person = {firstName: "John", lastName: "Doe", age:50, eyeColor: "blue"};
+// //person = null;
+// person = undefined;
+// console.log(typeof person);
+
+
+// const var1 =undefined;
+// const var2 = null;
+
+// console.log(typeof var1 + "\n" + typeof var2);
+// console.log(var1 === var2); //undefined === object
+// console.log(var1 == var2); //undefined == object or null == null
+
+// // function myFunction(var11) {
+// //     return var11.constructor === undefined;
+// // }
+
+const  cars = ["Saab", "Volvo", "Audi", "BMW"];
+
+console.log(cars instanceof Array);
+console.log(cars instanceof Object);
+console.log(cars instanceof String);
+console.log(cars instanceof Number);
