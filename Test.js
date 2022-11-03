@@ -394,22 +394,22 @@
     // console.log(text111);
 
 
-    const letters = new Set();
-    const a = "a";
-    const b = "b";
-    const c = "c";
+    // const letters = new Set();
+    // const a = "a";
+    // const b = "b";
+    // const c = "c";
 
-    let text = "";
+    // let text = "";
     
-    letters.add(a);
-    letters.add(b);
-    letters.add(c);
+    // letters.add(a);
+    // letters.add(b);
+    // letters.add(c);
 
-    for (const x of letters.values()) {
-        text += " " + x;
-    }
+    // for (const x of letters.values()) {
+    //     text += " " + x;
+    // }
 
-    console.log(text);
+    // console.log(text);
 
 
     // const fruits = new Map([
@@ -418,28 +418,42 @@
     //     ["oranges", 200]
     // ]);
 
-    const fruits = new Map();
+    // const fruits = new Map();
 
-    fruits.set("apples", 500);
-    fruits.set("bananas", 300);
-    fruits.set("oranges", 200);
+    // fruits.set("apples", 500);
+    // fruits.set("bananas", 300);
+    // fruits.set("oranges", 200);
 
-    let gets = fruits.get("apples");
-    let deletes = fruits.delete("apples");
-    let sizes = fruits.size;
-    let hsapple = fruits.has("apples");
+    // let gets = fruits.get("apples");
+    // let deletes = fruits.delete("apples");
+    // let sizes = fruits.size;
+    // let hsapple = fruits.has("apples");
 
-    let TEXT = "";
-    // fruits.forEach(function (value, key){
-    //     TEXT += " " + value; 
-    // });
-    for (const y of fruits.entries()) {
-        TEXT += " " + y; 
-    }
+    // let TEXT = "";
+    // // fruits.forEach(function (value, key){
+    // //     TEXT += " " + value; 
+    // // });
+    // for (const y of fruits.entries()) {
+    //     TEXT += " " + y; 
+    // }
 
 
-    console.log(gets);
-    console.log(deletes);
-    console.log(hsapple);
-    console.log(sizes);
-    console.log(TEXT);
+    // console.log(gets);
+    // console.log(deletes);
+    // console.log(hsapple);
+    // console.log(sizes);
+    // console.log(TEXT);
+
+
+
+    
+    console.log(typeof "John");
+    console.log(typeof 3.14);
+    console.log(typeof NaN);
+    console.log(typeof false);
+    console.log(typeof [1]);
+    console.log(typeof {name: 'John', age: 34});
+    console.log(typeof new Date());
+    console.log(typeof function (){});
+    console.log(typeof myCar);
+    console.log(typeof null);
