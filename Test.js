@@ -511,9 +511,18 @@
 // console.log(cars instanceof Number);
 
 
-console.log(Number("3.14"));
-console.log(Number(Math.PI));
-console.log(Number(" "));
-console.log(Number(""));
-console.log(Number("3 14"));
-console.log(Number("John"));
+// console.log(Number("3.14"));
+// console.log(Number(Math.PI));
+// console.log(Number(" "));
+// console.log(Number(""));
+// console.log(Number("3 14"));
+// console.log(Number("John"));
+
+let x = 123;
+console.log(String(x));
+console.log(Number(123));
+console.log(Number(100+23));
+
+console.log(x.toString());
+console.log((123).toString());
+console.log((100+23).toString());
