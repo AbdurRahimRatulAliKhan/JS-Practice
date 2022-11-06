@@ -538,11 +538,19 @@
 
 
 
-console.log(Number(false));
-console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number(true));
 
-console.log(String(false));
-console.log(String(true));
+// console.log(String(false));
+// console.log(String(true));
 
-console.log(false.toString());
-console.log(true.toString());
+// console.log(false.toString());
+// console.log(true.toString());
+
+
+
+console.log(5 + null);
+console.log("5" + null);
+console.log("5" + 2);
+console.log("5" - 2);
+console.log("5" * "2");
