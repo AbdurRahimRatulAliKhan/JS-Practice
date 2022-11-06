@@ -579,15 +579,18 @@
 // console.log(d);
 
 
-function dec2bin(dec) {
-    return (dec >>> 0).toString(2);
-}
-console.log("Converting Decimal to Binary: " + dec2bin(5));
+// function dec2bin(dec) {
+//     return (dec >>> 0).toString(2);
+// }
+// console.log("Converting Decimal to Binary: " + dec2bin(5));
 
 
-function bin2dec(bin) {
-    return parseInt(bin, 2).toString(10);
-}
-console.log("Converting Binary to Decimal: " + bin2dec(10));
+// function bin2dec(bin) {
+//     return parseInt(bin, 2).toString(10);
+// }
+// console.log("Converting Binary to Decimal: " + bin2dec(10));
 
 
+let text = "Visit W3Schools!";
+let n = text.search("W3Schools");
+console.log(n);
