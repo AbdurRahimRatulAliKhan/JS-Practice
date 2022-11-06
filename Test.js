@@ -549,31 +549,45 @@
 
 
 
-console.log(5 + null);
-console.log("5" + null);
-console.log("5" + 2);
-console.log("5" - 2);
-console.log("5" * "2");
+// console.log(5 + null);
+// console.log("5" + null);
+// console.log("5" + 2);
+// console.log("5" - 2);
+// console.log("5" * "2");
 
 
-let x = 5 & 1;
-console.log(x);
+// let x = 5 & 1;
+// console.log(x);
 
-let y = 5 | 1;
-console.log(y);
+// let y = 5 | 1;
+// console.log(y);
 
-let z = 5 ^ 1;
-console.log(z);
+// let z = 5 ^ 1;
+// console.log(z);
 
-let a = ~5;
-console.log(a);
+// let a = ~5;
+// console.log(a);
 
 
-let b = 5 << 1;
-console.log(b);
+// let b = 5 << 1;
+// console.log(b);
 
-let c = -5 >> 1;
-console.log(c);
+// let c = -5 >> 1;
+// console.log(c);
 
-let d = 5 >>> 1;
-console.log(d);
+// let d = 5 >>> 1;
+// console.log(d);
+
+
+function dec2bin(dec) {
+    return (dec >>> 0).toString(2);
+}
+console.log("Converting Decimal to Binary: " + dec2bin(5));
+
+
+function bin2dec(bin) {
+    return parseInt(bin, 2).toString(10);
+}
+console.log("Converting Binary to Decimal: " + bin2dec(10));
+
+
