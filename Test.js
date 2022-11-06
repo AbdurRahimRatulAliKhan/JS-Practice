@@ -518,11 +518,16 @@
 // console.log(Number("3 14"));
 // console.log(Number("John"));
 
-let x = 123;
-console.log(String(x));
-console.log(Number(123));
-console.log(Number(100+23));
+// let x = 123;
+// console.log(String(x));
+// console.log(Number(123));
+// console.log(Number(100+23));
 
-console.log(x.toString());
-console.log((123).toString());
-console.log((100+23).toString());
+// console.log(x.toString());
+// console.log((123).toString());
+// console.log((100+23).toString());
+
+
+let d = new Date();
+console.log(Number(d));
+console.log(d.getTime());
