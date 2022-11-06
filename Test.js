@@ -528,6 +528,10 @@
 // console.log((100+23).toString());
 
 
-let d = new Date();
-console.log(Number(d));
-console.log(d.getTime());
+// let d = new Date();
+// console.log(Number(d));
+// console.log(d.getTime());
+
+let dd = new Date();
+console.log(String(dd));
+console.log(dd.toString());
