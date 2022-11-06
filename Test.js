@@ -532,6 +532,17 @@
 // console.log(Number(d));
 // console.log(d.getTime());
 
-let dd = new Date();
-console.log(String(dd));
-console.log(dd.toString());
+// let dd = new Date();
+// console.log(String(dd));
+// console.log(dd.toString());
+
+
+
+console.log(Number(false));
+console.log(Number(true));
+
+console.log(String(false));
+console.log(String(true));
+
+console.log(false.toString());
+console.log(true.toString());
