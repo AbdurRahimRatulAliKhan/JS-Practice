@@ -503,10 +503,17 @@
 // //     return var11.constructor === undefined;
 // // }
 
-const  cars = ["Saab", "Volvo", "Audi", "BMW"];
+// const  cars = ["Saab", "Volvo", "Audi", "BMW"];
 
-console.log(cars instanceof Array);
-console.log(cars instanceof Object);
-console.log(cars instanceof String);
-console.log(cars instanceof Number);
+// console.log(cars instanceof Array);
+// console.log(cars instanceof Object);
+// console.log(cars instanceof String);
+// console.log(cars instanceof Number);
 
+
+console.log(Number("3.14"));
+console.log(Number(Math.PI));
+console.log(Number(" "));
+console.log(Number(""));
+console.log(Number("3 14"));
+console.log(Number("John"));
