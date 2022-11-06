@@ -591,35 +591,44 @@
 // console.log("Converting Binary to Decimal: " + bin2dec(10));
 
 
-let text = "Visit W3School!";
-let n = text.search("W3School");
-console.log(n);
+// let text = "Visit W3School!";
+// let n = text.search("W3School");
+// console.log(n);
 
-let text1 = "Visit W3School!";
-let n1 = text1.search(/W3School/i);
-console.log(n1);
+// let text1 = "Visit W3School!";
+// let n1 = text1.search(/W3School/i);
+// console.log(n1);
 
 
-let text111 = "Visit W3School!";
-let n21 = text111.replace("W3School", "Microsoft");
-console.log(n21);
+// let text111 = "Visit W3School!";
+// let n21 = text111.replace("W3School", "Microsoft");
+// console.log(n21);
 
-let text11 = "Visit W3School!";
-let n2 = text11.replace(/w3school/i , "Microsoft");
-console.log(n2);
+// let text11 = "Visit W3School!";
+// let n2 = text11.replace(/w3school/i , "Microsoft");
+// console.log(n2);
 
-let text3 = "Visit W3School!";
-let n3 = text3.match(/(W3school|Visit)/g);
-console.log(n3);
+// let text3 = "Visit W3School!";
+// let n3 = text3.match(/(W3school|Visit)/g);
+// console.log(n3);
 
 
 let text4 = "100, re, green, red, green, gren, gr, blue, yellow";
+let text = "oooHellooo World! Hello W3Schools!"; 
 //let result4 = text4.match(/(red|green)/g);
 //let result4 = text4.match(/(\d)/g);
 //let result4 = text4.match(/\s/g);
 let result4 = text4.match(/\bre/);
 let result5 = text4.match(/\bre/g);
 let result6 = text4.match(/\u0067/g);
+let result7 = text.match(/o?/g);
 console.log(result4);
 console.log(result5);
 console.log(result6);
+console.log(result7);
+
+console.log(/e/.test("The best thing of our life is free to everything!"));
+console.log(/e/.exec("The best thing of our life is free to everything!"));
+
+const varr = /e/.exec("The best thing of our life is free to everything!");
+console.log("Find out \""+ varr[0]+ "\" at the index \"" + varr.index + "\"");
