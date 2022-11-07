@@ -56,7 +56,7 @@ Number("John") + "<br>";
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -71,6 +71,34 @@ Number("John") + "<br>";
                 document.getElementById("demo").innerHTML 
                 //= error.message;
                 = error.name;
+            }
+        </script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <input id="inputText" type="text">
+        <button type="button" onclick="myFunction" >Test Input</button>
+        <p id="print"></p>
+
+        <script>
+            function myFunction() {
+                let inputText = document.getElementById("inputText").value;
+                const message = document.getElementById("print");
+                message.innerHTML = " ";
+                //document.getElementById("print").innerHTML = message;
+
+                try {
+                    if (inputText > 5) {
+                        throw "greater than 5";
+                    }
+                } catch (error) {
+                    
+                }
             }
         </script>
     </body>
