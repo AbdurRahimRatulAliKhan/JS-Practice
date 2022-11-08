@@ -216,7 +216,7 @@ Number("John") + "<br>";
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <input id="inputText" type="text">
@@ -237,4 +237,53 @@ Number("John") + "<br>";
             }
         </script>
     </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <input id="inputText" type="text">
+        <button type="button" onclick="myFunction()" >Test Input</button>
+        <p id="print"></p>
+
+        <script>
+            function myFunction() {
+                const message = document.getElementById("print");
+
+                let inputText = document.getElementById("inputText").value;
+
+                try {
+                    inputText = Number(inputText);
+                    inputText = inputText + 6;
+                    throw inputText;
+                } catch (error) {
+                    message.innerHTML = error;
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+let num = 1;
+try {
+  num.toUpperCase();
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
 </html>
