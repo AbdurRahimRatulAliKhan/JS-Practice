@@ -117,7 +117,7 @@ Number("John") + "<br>";
 
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
     <body>
@@ -153,6 +153,36 @@ Number("John") + "<br>";
                 finally {
                     //document.getElementById("inputText").innerHTML = inputText;
                     document.getElementById("inputText").value = "";
+                }
+            }
+        </script>
+    </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <input id="inputText" type="text">
+        <button type="button" onclick="myFunction()" >Test Input</button>
+        <p id="print"></p>
+
+        <script>
+            function myFunction() {
+                //const message = document.getElementById("print");
+                //message.innerHTML = "";
+
+                let inputText = document.getElementById("inputText").value;
+                let number = 1;
+
+                try {
+                    number.toPrecision(500);
+                } catch (error) {
+                    document.getElementById("print").innerHTML = error.name;
+                    //document.getElementById("print").innerHTML = console.error();
                 }
             }
         </script>
