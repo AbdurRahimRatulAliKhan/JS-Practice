@@ -240,35 +240,11 @@ Number("John") + "<br>";
 </html> -->
 
 
-<!DOCTYPE html>
-<html>
-    <body>
-
-        <input id="inputText" type="text">
-        <button type="button" onclick="myFunction()" >Test Input</button>
-        <p id="print"></p>
-
-        <script>
-            function myFunction() {
-                const message = document.getElementById("print");
-
-                let inputText = document.getElementById("inputText").value;
-
-                try {
-                    inputText = Number(inputText);
-                    inputText = inputText + 6;
-                    throw inputText;
-                } catch (error) {
-                    message.innerHTML = error;
-                }
-            }
-        </script>
-    </body>
-</html>
 
 
 
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -286,4 +262,33 @@ catch(err) {
 </script>
 
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <input id="inputText" type="text">
+        <button type="button" onclick="myFunction()" >Click</button>
+        <p id="print"></p>
+
+        <script>
+
+
+            function myFunction() {
+                let inputText = document.getElementById("inputText").value;
+                const message = document.getElementById("print");
+
+                try {
+                    // inputText = Number(inputText);
+                    // inputText = inputText + 6;
+                    inputText = decodeURI(inputText);
+                    throw inputText;
+                } catch (error) {
+                    message.innerHTML = error;
+                }
+            }
+        </script>
+    </body>
 </html>
