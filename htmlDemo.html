@@ -82,22 +82,32 @@ Number("John") + "<br>";
     <body>
 
         <input id="inputText" type="text">
-        <button type="button" onclick="myFunction" >Test Input</button>
+        <button type="button" onclick="myFunction()" >Test Input</button>
         <p id="print"></p>
 
         <script>
             function myFunction() {
-                let inputText = document.getElementById("inputText").value;
                 const message = document.getElementById("print");
-                message.innerHTML = " ";
+                //message.innerHTML = "";
+
+                let inputText = document.getElementById("inputText").value;
+                
                 //document.getElementById("print").innerHTML = message;
 
                 try {
-                    if (inputText > 5) {
+                    //inputText = Number(inputText);
+                    if (isNaN(inputText)) {
+                        throw "NaN";
+                    }
+                    if (inputText > 5) //throw "greater than 5";
+                    {
                         throw "greater than 5";
                     }
+                    if (inputText == "") {
+                        throw "empty";
+                    }
                 } catch (error) {
-                    
+                    message.innerHTML = error;
                 }
             }
         </script>
