@@ -265,7 +265,7 @@ catch(err) {
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
 
@@ -288,6 +288,42 @@ catch(err) {
                 } catch (error) {
                     message.innerHTML = error;
                 }
+            }
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="print"></p>
+
+        <script>
+
+            myFunction();
+            document.getElementById("print").innerHTML = carname;
+
+            function myFunction() {
+                carname = "Volvo";
+            }
+        </script>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="print1"></p>
+
+        <script>
+            let carname = "Volvo";
+            myFunction();
+
+            function myFunction() {
+                document.getElementById("print1").innerHTML = carname;
             }
         </script>
     </body>
