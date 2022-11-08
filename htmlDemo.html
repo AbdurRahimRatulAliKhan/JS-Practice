@@ -190,7 +190,7 @@ Number("John") + "<br>";
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
     <body>
@@ -206,6 +206,31 @@ Number("John") + "<br>";
             function myFunction() {
                 try {
                     inputText = anotherValue + 1;
+                } catch (error) {
+                    document.getElementById("print").innerHTML = error.name;
+                }
+            }
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <input id="inputText" type="text">
+        <button type="button" onclick="myFunction()" >Test Input</button>
+
+        <p id="print"></p>
+        
+
+        <script>
+            let inputText = document.getElementById("inputText").value;
+            
+            function myFunction() {
+                try {
+                    eval("alert('Hello!)");
                 } catch (error) {
                     document.getElementById("print").innerHTML = error.name;
                 }
