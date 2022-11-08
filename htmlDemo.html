@@ -294,7 +294,7 @@ catch(err) {
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
     <body>
@@ -324,6 +324,24 @@ catch(err) {
 
             function myFunction() {
                 document.getElementById("print1").innerHTML = carname;
+            }
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="print"></p>
+
+        <script>
+            var carname = "Volvo";
+            myFunction();
+
+            function myFunction() {
+                document.getElementById("print").innerHTML = window.carname;
             }
         </script>
     </body>
