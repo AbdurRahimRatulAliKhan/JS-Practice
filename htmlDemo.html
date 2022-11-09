@@ -330,7 +330,7 @@ catch(err) {
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
     <body>
@@ -347,12 +347,12 @@ catch(err) {
             }
         </script>
     </body>
-</html>
+</html> -->
 
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -362,4 +362,102 @@ let public = 1500;   // This will cause an error
 </script>
 
 </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="print"></p>
+
+        <script>
+            const person = {
+                firstName: "John",
+                lastName: "Hash",
+                ID: 84783,
+                fullName: function () {
+                    return this.firstName+ " " + this.lastName;
+                }
+            };
+
+            document.getElementById("print").innerHTML = person.fullName();
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="print1"></p>
+        <button onclick="this.style.display='none'">Click Me to Remove</button>
+
+        <script>
+            "use strict";
+            document.getElementById("print1").innerHTML = myFunction();
+
+            function myFunction() {
+                return this;
+            }
+            
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="print2"></p>
+
+        <script>
+            const person1 = {
+                fullName: function () {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+
+            const person2 = {
+                firstName: "Jongg",
+                lastName: "Hajjja",
+            }
+
+            let x = person1.fullName.call(person2);
+            document.getElementById("print2").innerHTML = x;
+            
+        </script>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="print3"></p>
+
+        <script>
+            const person3 = {
+                firstName: "Jongg",
+                lastName: "Hajjja",
+                fullName: function () {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+
+            const person4 = {
+                firstName: "Hajjja",
+                lastName: "Jongg",
+            }
+
+            // let x1 = person3.fullName.bind(person4);
+            // document.getElementById("print3").innerHTML = x1();
+            let fullName = person3.fullName.bind(person4);
+            document.getElementById("print3").innerHTML = fullName();
+            
+        </script>
+    </body>
 </html>
