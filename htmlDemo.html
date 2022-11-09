@@ -337,12 +337,29 @@ catch(err) {
         <p id="print1"></p>
 
         <script>
+            "use strict";
             var carname = "Volvo";
             myFunction();
 
             function myFunction() {
-                document.getElementById("print1").innerHTML = window.carname;
+                document.getElementById("print1")
+                .innerHTML = window.carname;
             }
         </script>
     </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+"use strict";
+let public = 1500;   // This will cause an error 
+</script>
+
+</body>
 </html>
