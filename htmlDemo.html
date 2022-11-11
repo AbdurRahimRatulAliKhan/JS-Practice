@@ -464,20 +464,33 @@ let public = 1500;   // This will cause an error
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
-
-<h1>JavaScript Functions</h1>
-<h2>The Arrow Function</h2>
-
-<p>This example shows the syntax of an Arrow Function, and how to use it.</p>
 
 <p id="demo"></p>
 
 <script>
-let myFunction = (a, b) => a * b;
-document.getElementById("demo").innerHTML = myFunction(4, 5);
+    let myFunction = (a, b) => a * b;
+    document.getElementById("demo").innerHTML = myFunction(6, 5);
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    // let Hello = () => {
+    //     return "Hello World!";
+    // }
+    let Hello = (anotherText) => "Hello World!" + anotherText;
+    document.getElementById("demo").innerHTML = Hello(" Rakesh Chopra");
 </script>
 
 </body>
