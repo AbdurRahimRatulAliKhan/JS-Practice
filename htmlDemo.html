@@ -479,7 +479,7 @@ let public = 1500;   // This will cause an error
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -494,4 +494,36 @@ let public = 1500;   // This will cause an error
 </script>
 
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="btn">Click me</button>
+<p id="demo"></p>
+
+<button id="btn2">Click me too</button>
+<p id="demo2"></p>
+
+<script>
+    let Hello = () => {
+        document.getElementById("demo").innerHTML += this;
+    }
+    window.addEventListener("load", Hello);
+    document.getElementById("btn").addEventListener("click", Hello);
+</script>
+
+<script>
+    let Hello2 = function () {
+        document.getElementById("demo2").innerHTML += this;
+    }
+
+    window.addEventListener("load", Hello2);
+    document.getElementById("btn2").addEventListener("click", Hello2);
+</script>
+
+</body>
 </html>
+
