@@ -527,7 +527,7 @@ let public = 1500;   // This will cause an error
 </body>
 </html> -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -547,6 +547,36 @@ let public = 1500;   // This will cause an error
             document.getElementById("demo").innerHTML = 
             myCar.name + " " + myCar.year + ", " + 
             myCar.age() + " years old.";
+        </script>
+    </body>
+</html> -->
+
+<!-- import from export -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            import { name, age } from "./person.js";
+
+            let fullText = "My name is" + name + "and Im " + age + "years old.";
+            
+            document.getElementById("demo").innerHTML = fullText;
+        </script>
+    </body>
+</html>
+
+<!-- import from default exports -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            import message from "./message.js";
+            
+            document.getElementById("demo").innerHTML = message();
         </script>
     </body>
 </html>
