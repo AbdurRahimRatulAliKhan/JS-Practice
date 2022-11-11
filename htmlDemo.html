@@ -553,7 +553,7 @@ let public = 1500;   // This will cause an error
 
 <!-- import from export -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -565,11 +565,11 @@ let public = 1500;   // This will cause an error
             document.getElementById("demo").innerHTML = fullText;
         </script>
     </body>
-</html>
+</html> -->
 
 <!-- import from default exports -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -579,8 +579,48 @@ let public = 1500;   // This will cause an error
             document.getElementById("demo").innerHTML = message();
         </script>
     </body>
-</html>
+</html> -->
 
 <!-- Modules only work with the HTTP(s) protocol.
 
 A web-page opened via the file:// protocol cannot use import / export. -->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let text = '{"employees":['+
+            '{"firstName":"John", "lastName":"Kabir"},'+
+            '{"firstName":"Anna", "lastName":"Smith"},'+
+            '{"firstName":"Peter", "lastName":"Jones"}]}';
+            const obj = JSON.parse(text);
+            
+            document.getElementById("demo").innerHTML = obj.employees[0].firstName + " " + obj.employees[2].lastName;
+        </script>
+    </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo2"></p>
+
+<script>
+let text2 = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+const obj2 = JSON.parse(text2);
+document.getElementById("demo2").innerHTML =
+obj2.employees[1].firstName + " " + obj2.employees[1].lastName;
+</script>
+
+</body>
+</html> -->
