@@ -497,7 +497,7 @@ let public = 1500;   // This will cause an error
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -525,5 +525,28 @@ let public = 1500;   // This will cause an error
 </script>
 
 </body>
-</html>
+</html> -->
 
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            class Car{
+                constructor(name, year){
+                    this.name = name;
+                    this.year = year;
+                }
+                age(){
+                    let date = new Date();
+                    return date.getFullYear() - this.year;
+                }
+            }
+
+            const myCar = new Car("Audi", 2019);
+            document.getElementById("demo").innerHTML = 
+            myCar.name + " " + myCar.year + ", " + 
+            myCar.age() + " years old.";
+        </script>
+    </body>
+</html>
