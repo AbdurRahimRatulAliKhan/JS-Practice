@@ -849,7 +849,7 @@ document.getElementById("demogfsdgf").innerHTML = "Hello";
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -892,4 +892,36 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 </script>
 
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const obj = document.getElementById("demo");
+            obj.innerHTML = "Hello";
+        </script>
+    </body>
 </html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo2"></p>
+
+        <script>
+            window.onload = function () {
+                const element = document.createElement("script");
+                element.src = "message.js";
+                document.body.appendChild(element);
+
+                document.getElementById("demo2").innerHTML = element;
+            }
+        </script>
+    </body>
+</html> -->
