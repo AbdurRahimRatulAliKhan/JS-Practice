@@ -586,7 +586,7 @@ let public = 1500;   // This will cause an error
 A web-page opened via the file:// protocol cannot use import / export. -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -600,7 +600,7 @@ A web-page opened via the file:// protocol cannot use import / export. -->
             document.getElementById("demo").innerHTML = obj.employees[0].firstName + " " + obj.employees[2].lastName;
         </script>
     </body>
-</html>
+</html> -->
 
 
 <!-- <!DOCTYPE html>
@@ -624,3 +624,20 @@ obj2.employees[1].firstName + " " + obj2.employees[1].lastName;
 
 </body>
 </html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let text = '{"employees":['+
+            '{"firstName":"John", "lastName":"Kabir"},'+
+            '{"firstName":"Anna", "lastName":"Smith"},'+
+            '{"firstName":"Peter", "lastName":"Jones"}]}';
+            const obj = JSON.parse(text);
+            debugger;
+            document.getElementById("demo").innerHTML = obj.employees[0].firstName + " " + obj.employees[2].lastName;
+        </script>
+    </body>
+</html>
