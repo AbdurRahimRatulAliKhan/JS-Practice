@@ -963,7 +963,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <button onclick="myFunction()">Click</button>
@@ -976,6 +976,31 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
                 obj.innerHTML = Array.isArray(fruits);
             }
+            
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- <button onclick="myFunction()">Click</button> -->
+        <p id="demo"></p>
+
+        <script>
+            var txt = "";
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.forEach(myFunction);
+            
+            const obj = document.getElementById("demo");
+
+            function myFunction(value) {
+                txt += value + " ";
+            }
+
+            obj.innerHTML = txt;
             
         </script>
     </body>
