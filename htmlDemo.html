@@ -1293,7 +1293,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1317,6 +1317,35 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
             //display language
             const obj = document.getElementById("demo");
             obj.innerHTML = person.language;
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            var person = {
+                firstName: "John",
+                lastName: "Doe",
+                fullName: function () {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+
+            const member = {
+                firstName: "Mr",
+                lastName: "Jeny"
+            }
+
+            let fullName = person.fullName.bind(member);
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = fullName();
         </script>
     </body>
 </html>
