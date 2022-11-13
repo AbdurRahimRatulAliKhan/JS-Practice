@@ -1055,7 +1055,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1071,6 +1071,29 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
             function myFunction(total, value, index, array) {
                 return total + value;
+            }
+            
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            var txt = "";
+            var Numbers = [45, 4, 9, 16, 25];
+            var Numbers2 = Numbers.every(myFunction);
+            
+            const obj = document.getElementById("demo");
+            obj.innerHTML = Numbers2;
+
+            function myFunction(value) {
+                return value > 18;
             }
             
         </script>
