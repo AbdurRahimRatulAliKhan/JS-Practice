@@ -927,7 +927,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -940,6 +940,23 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
             const obj = document.getElementById("demo");
 //            obj.innerHTML = str.charAt(0);
             obj.innerHTML = str[0];
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            var str = "          Hello World!         ";
+            const obj = document.getElementById("demo");
+            let str2 = str.trim();
+
+            obj.innerHTML = str.length + " " + str2.length;
         </script>
     </body>
 </html>
