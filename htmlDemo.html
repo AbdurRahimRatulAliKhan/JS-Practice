@@ -946,7 +946,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -957,6 +957,26 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
             let str2 = str.trim();
 
             obj.innerHTML = str.length + " " + str2.length;
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="myFunction()">Click</button>
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                const obj = document.getElementById("demo");
+
+                obj.innerHTML = Array.isArray(fruits);
+            }
+            
         </script>
     </body>
 </html>
