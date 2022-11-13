@@ -982,11 +982,10 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
     <body>
-        <!-- <button onclick="myFunction()">Click</button> -->
         <p id="demo"></p>
 
         <script>
@@ -1001,6 +1000,31 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
             }
 
             obj.innerHTML = txt;
+            
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            var txt = "";
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            var fruits2 = fruits.map(myFunction);
+            
+            const obj = document.getElementById("demo");
+            obj.innerHTML = fruits2;
+
+            function myFunction(value) {
+                return value + " fruits";
+            }
             
         </script>
     </body>
