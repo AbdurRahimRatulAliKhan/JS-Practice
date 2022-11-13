@@ -1230,7 +1230,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1250,6 +1250,73 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
             person.lang = "en";
             const obj = document.getElementById("demo");
             obj.innerHTML = person.lang;
+        </script>
+    </body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            //create an object
+            var person = {
+                firstName: "John",
+                lastName: "Doe",
+                language: "NO",
+            };
+
+            //change a property
+            Object.defineProperty(person, "language", {
+                value: "EN",
+                writable : true,
+//                enumerable : true,
+                enumerable : false,
+                configurable : true
+            });
+
+            //enumarate properties
+            var txt = "";
+            for(var x in person) {
+                txt += person[x] + " ";
+            }
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = txt;
+        </script>
+    </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            //create an object
+            var person = {
+                firstName: "John",
+                lastName: "Doe",
+                language: "NO",
+            };
+
+            //change a property
+            Object.defineProperty(person, "language", {
+                get : function () { return language },
+                set : function(value) { language = value.toUpperCase()}
+            });
+
+            person.language = "en";
+
+            //display language
+            const obj = document.getElementById("demo");
+            obj.innerHTML = person.language;
         </script>
     </body>
 </html>
