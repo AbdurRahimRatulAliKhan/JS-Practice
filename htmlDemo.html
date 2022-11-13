@@ -1079,7 +1079,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1098,10 +1098,10 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
             
         </script>
     </body>
-</html>
+</html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1118,6 +1118,42 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
                 return value > 18;
             }
             
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            var txt = "";
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            var a = fruits.indexOf("Apple");
+            
+            const obj = document.getElementById("demo");
+            obj.innerHTML = a;
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            var txt = "";
+            var fruits = ["Apple", "Banana", "Orange", "Apple", "Mango"];
+            var a = fruits.lastIndexOf("Apple");
+            
+            const obj = document.getElementById("demo");
+            obj.innerHTML = a;
         </script>
     </body>
 </html>
