@@ -1477,7 +1477,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
     <body>
@@ -1493,6 +1493,159 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
             myPromise.then((value) => {
                 document.getElementById("demo").innerHTML = value;
             })
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const person = {
+                firstName: "John",
+                lastName: "Kabir",
+                age: 40,
+                eyeColor: "blue"
+            };
+
+//            let id = Symbol('id');
+            let id = Symbol("id");
+            person[id] = 3846238974;
+
+            document.getElementById("demo").innerHTML = person.id + " " + person[id];
+        </script>
+    </body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(x, y = 10) {
+  return x + y;
+}
+document.getElementById("demo").innerHTML = myFunction(5);
+</script>
+
+</body>
+</html>
+ -->
+
+
+
+ <!-- <!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+
+            function sum(...args) {
+                let sum = 0;
+                for (const arg of args) sum += arg;
+                return sum;
+            }
+
+            let total = sum(4, 5, 6, 7, 8, 9, 10);
+
+            document.getElementById("demo").innerHTML = total;
+
+        </script>
+    </body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+        let text = "Hello world, welcome to the universe.";
+        document.getElementById("demo").innerHTML = text.includes("world");
+        </script>
+
+
+        </script>
+    </body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const myArr = Array.from("hjdhjfah");
+            const obj = document.getElementById("demo");
+            obj.innerHTML = myArr;
+        </script>
+    </body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            const fruitkeys = fruits.keys();
+            let Text = "";
+
+            for (const fruitkey of fruitkeys) {
+                Text += fruitkey + " ";
+            }
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = Text;
+        </script>
+    </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            const numbers = [4, 9, 16, 25, 29];
+            const f = numbers.entries();
+//            let first = numbers.find(myFunction);
+              let first = numbers.findIndex(myFunction);
+//              let x = Number.MAX_SAFE_INTEGER;
+            let show = "";
+
+            function myFunction(value, index, array) {
+            return value > 18;
+            }
+
+            for (let x of f) {
+                show += x + " ";
+            }
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = first;
+            const obj1 = document.getElementById("demo1");
+            obj1.innerHTML = show;
         </script>
     </body>
 </html>
