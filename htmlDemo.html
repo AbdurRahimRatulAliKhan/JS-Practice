@@ -1434,7 +1434,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1448,6 +1448,51 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
             const obj = document.getElementById("demo");
             obj.innerHTML = letters.size;
+        </script>
+    </body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            class car {
+                constructor (name, year) {
+                    this.name = name;
+                    this.year = year;
+                }
+            }
+
+            const myCar = new car("Farari", 2023);
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = myCar.name + " " + myCar.year;
+        </script>
+    </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const myPromise = new Promise(function (myResolve, myReject) {
+                setTimeout(() => {
+                    myResolve("I love ARMY!");
+                }, 3000);
+            });
+
+            myPromise.then((value) => {
+                document.getElementById("demo").innerHTML = value;
+            })
         </script>
     </body>
 </html>
