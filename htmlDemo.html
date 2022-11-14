@@ -1359,7 +1359,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1370,6 +1370,46 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
             const obj = document.getElementById("demo");
             obj.innerHTML = maxValue;
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const cars = ["BMW", "Farari", "Toyota"];
+            let txt = "";
+            for(var x of cars) {
+                txt += x + " ";
+            }
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = txt;
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const language = "JavaScript";
+            let txt = "";
+            for(var x of language) {
+                txt += x + " ";
+            }
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = txt;
         </script>
     </body>
 </html>
