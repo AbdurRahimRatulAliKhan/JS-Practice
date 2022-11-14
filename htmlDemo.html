@@ -1396,7 +1396,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1410,6 +1410,44 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
             const obj = document.getElementById("demo");
             obj.innerHTML = txt;
+        </script>
+    </body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const fruits = new Map([
+                ["apples", 500],
+                ["bananas", 300],
+                ["oranges", 200]
+            ]);
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = fruits.get("apples");
+        </script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const letters = new Set();
+
+            letters.add("a");
+            letters.add("b");
+            letters.add("c");
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = letters.size;
         </script>
     </body>
 </html>
