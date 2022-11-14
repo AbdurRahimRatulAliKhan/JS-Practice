@@ -1329,23 +1329,12 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
         <p id="demo"></p>
 
         <script>
-            var person = {
-                firstName: "John",
-                lastName: "Doe",
-                fullName: function () {
-                    return this.firstName + " " + this.lastName;
-                }
-            };
-
-            const member = {
-                firstName: "Mr",
-                lastName: "Jeny"
-            }
-
-            let fullName = person.fullName.bind(member);
+//            const x = (x, y) => x * y;
+            const y = (m, n) => {return m * n};
 
             const obj = document.getElementById("demo");
-            obj.innerHTML = fullName();
+//            obj.innerHTML = x(5,5);
+            obj.innerHTML = y(5,5);
         </script>
     </body>
 </html>
