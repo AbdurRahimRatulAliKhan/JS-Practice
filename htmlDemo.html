@@ -1323,7 +1323,7 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <body>
         <p id="demo"></p>
@@ -1335,6 +1335,41 @@ document.getElementById("demo").innerHTML = typeof myObj !== "undefined" && myOb
             const obj = document.getElementById("demo");
 //            obj.innerHTML = x(5,5);
             obj.innerHTML = y(5,5);
+        </script>
+    </body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const cars1 = ["Saab", "Volvo", ..."BMW"];
+            const cars2 = ["Fiat", "Toyota"];
+            const combined = [cars1, ...cars2];
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = combined;
+        </script>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const numbers = [23, 55, 21, 87, 56];
+            let maxValue = Math.max(...numbers);
+
+            const obj = document.getElementById("demo");
+            obj.innerHTML = maxValue;
         </script>
     </body>
 </html>
