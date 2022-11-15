@@ -1653,7 +1653,7 @@ document.getElementById("demo").innerHTML = myFunction(5);
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -1665,10 +1665,10 @@ document.getElementById("demo").innerHTML = z;
 </script>
 
 </body>
-</html>
+</html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -1682,7 +1682,95 @@ document.getElementById("demo2").innerHTML = x;
 </script>
 
 </body>
-</html>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo3"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruits.includes("Mango");
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    let txt = "5";
+//    txt = txt.padStart(4, "2");
+    txt = txt.padEnd(4, "2");
+    document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+    const person = {
+  firstName : "John",
+  lastName : "Doe",
+  age : 50,
+  eyeColor : "blue"
+};
+
+const myMap = new Map(Object.entries(person));
+
+let text = "";
+for (let [personeach, value] of Object.entries(person)) {
+    text += personeach + ": " + value + " ";
+}
+
+    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo2").innerHTML = myMap;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo3"></p>
+
+<script>
+    const person1 = {
+  firstName : "John",
+  lastName : "Doe",
+  age : 50,
+  eyeColor : "blue"
+};
+
+
+    document.getElementById("demo3").innerHTML = Object.values(person1);
+</script>
+
+</body>
+</html> -->
+
 
 
 
@@ -1693,8 +1781,16 @@ document.getElementById("demo2").innerHTML = x;
 <p id="demo3"></p>
 
 <script>
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("demo3").innerHTML = fruits.includes("Mango");
+    async function myDisplay() {
+        let myPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("I love You!")
+            }, 3000);
+        });
+        document.getElementById("demo3").innerHTML = await myPromise;
+    }
+
+    myDisplay();
 </script>
 
 </body>
