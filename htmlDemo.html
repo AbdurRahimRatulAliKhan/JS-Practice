@@ -1954,7 +1954,7 @@ document.getElementById("demo").innerHTML = Array.from(iterator);
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -1970,6 +1970,43 @@ document.getElementById("demo").innerHTML = Array.from(iterator);
     x ??= 5;
 
     document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    let text = "I love cats. Cats are very easy to love. Cats are very popular."
+    text = text.replaceAll("Cats", "Dogs");
+    text = text.replaceAll("cats", "dogs");
+    document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    const num = 1_000_000_000_65_587;
+    const num1 = 100000000065587;
+
+    document.getElementById("demo").innerHTML = (num == num1);
 </script>
 
 </body>
