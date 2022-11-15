@@ -1805,3 +1805,69 @@ Promise Finally
 Object Rest Properties
 New RegExp Features
 JavaScript Shared Memory -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+let text1 = "     Hello World!     ";
+//let text2 = text1.trimStart();
+let text2 = text1.trimEnd();
+
+document.getElementById("demo").innerHTML =
+"Length text1 = " + text1.length + 
+"<br>Length text2 = " + text2.length;
+</script>
+
+</body>
+</html>
+ -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+const fruits = [
+["apples", 300],
+["pears", 900],
+["bananas", 500]
+];
+const myArr = [[1,2],[3,4],[5,6]];
+
+const newArrFlated = myArr.flat();
+const newArr = newArrFlated.flatMap((x) => x * 2);
+const myObj = Object.fromEntries(fruits);
+
+// fruits.sort(() => {});
+// let fruitsEmptyTxt = "";
+// fruits.forEach(myFunction);
+// function myFunction(value) {
+//     fruitsEmptyTxt = value.apples;
+//}
+
+function myFunction(a, b) {
+    return a * b;
+}
+
+document.getElementById("demo").innerHTML = myObj.pears;
+document.getElementById("demo2").innerHTML = newArr;
+//document.getElementById("demo3").innerHTML = fruitsEmptyTxt;
+document.getElementById("demo3").innerHTML = myFunction.toString();
+</script>
+
+</body>
+</html>
