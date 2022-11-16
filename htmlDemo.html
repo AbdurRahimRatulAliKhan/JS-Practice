@@ -1994,7 +1994,7 @@ document.getElementById("demo").innerHTML = Array.from(iterator);
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2010,7 +2010,7 @@ document.getElementById("demo").innerHTML = Array.from(iterator);
 </script>
 
 </body>
-</html>
+</html> -->
 
 
 
@@ -2058,3 +2058,52 @@ Note
 * Internet Explorer 9 did not support ES5 "use strict".
 
 ** Internet Explorer 11 does not support ES6. -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    const num = 1_000_000_000_65_587;
+    const num1 = 100000000065587;
+
+    document.getElementById("demo").innerHTML = (num == num1);
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age:50,
+  eyeColor: "blue"
+};
+
+const x = person;
+x.age = 10;
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
