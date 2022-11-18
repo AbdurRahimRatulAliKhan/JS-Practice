@@ -2125,6 +2125,8 @@ person.firstName + " is " + person.age + " years old.";
         age: 25
     }
     person.nationality = "English";
+    //delete person.age;
+    delete person["age"];
     let txt = "";
     for (let x in person) {
         if (Object.hasOwnProperty.call(person, x)) {
