@@ -2185,7 +2185,7 @@ person.firstName + " is " + person.age + " years old.";
 
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2218,6 +2218,34 @@ person.firstName + " is " + person.age + " years old.";
     }
 
 document.getElementById("demo").innerHTML = element;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+//   fullName : function() {
+//     return this.firstName + " " + this.lastName;
+//   }
+};
+person.name = function () {
+    return (this.firstName + " " + this.lastName).toUpperCase();
+  };
+
+document.getElementById("demo").innerHTML = person.name();
 </script>
 
 </body>
