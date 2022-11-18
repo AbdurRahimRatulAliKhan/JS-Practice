@@ -2110,7 +2110,7 @@ person.firstName + " is " + person.age + " years old.";
 
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2122,7 +2122,13 @@ person.firstName + " is " + person.age + " years old.";
     const person = {
         firstName: "John",
         lastName: "Doe",
-        age: 25
+        age: 25,
+        cars: {
+            car1: "Ford",
+            car2: "BMW",
+            car3: "Fiat",
+            car4: "Farari"
+        }
     }
     person.nationality = "English";
     //delete person.age;
@@ -2136,6 +2142,41 @@ person.firstName + " is " + person.age + " years old.";
     }
 
     document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 25,
+        cars: {
+            car1: "Ford",
+            car2: "BMW",
+            car3: "Fiat",
+            car4: "Farari"
+        }
+    }
+
+//    document.getElementById("demo").innerHTML = person.cars.car4;
+//    document.getElementById("demo").innerHTML = person.cars["car4"];
+    let p1 = "cars";
+    let p2 = "car4"
+//      document.getElementById("demo").innerHTML = person["cars"]["car4"];
+        document.getElementById("demo").innerHTML = person[p1][p2];
 </script>
 
 </body>
