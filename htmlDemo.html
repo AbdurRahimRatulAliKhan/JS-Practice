@@ -2225,7 +2225,7 @@ document.getElementById("demo").innerHTML = element;
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -2246,6 +2246,59 @@ person.name = function () {
   };
 
 document.getElementById("demo").innerHTML = person.name();
+</script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  today: new Date(),
+  age: function () {return 30;} //JSON.stringify will not stringify functions
+  //   fullName : function() {
+//     return this.firstName + " " + this.lastName;
+//   }
+};
+person.age = person.age.toString();
+// person.name = function () {
+//     return (this.firstName + " " + this.lastName).toUpperCase();
+//   };
+//let myArray = Object.values(person);
+let myString = JSON.stringify(person);
+//document.getElementById("demo").innerHTML = myArray;
+document.getElementById("demo").innerHTML = myString;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+const person = ["gaklsgks", "jdhjsdha", "jfdhgjsdahfj"];
+
+let myString = JSON.stringify(person);
+//document.getElementById("demo").innerHTML = myArray;
+document.getElementById("demo").innerHTML = myString;
 </script>
 
 </body>
