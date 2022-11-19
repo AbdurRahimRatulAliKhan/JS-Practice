@@ -2384,6 +2384,9 @@ document.getElementById("demo").innerHTML = person.language;
         this.age = age;
         this.eyeColor = eye;
         this.nationality = "English";
+        this.name = function () {
+        return this.firstName + " " + this.lastName;
+    };
     }
 
 //    myFather.nationality = "English";
@@ -2392,13 +2395,13 @@ document.getElementById("demo").innerHTML = person.language;
     const myMother = new Person("John", "Doe", 40, "Blue");
 
     //myFather.nationality = "English";
-    myFather.name = function () {
-        return this.firstName + " " + this.lastName;
-    }
+    // myFather.name = function () {
+    //     return this.firstName + " " + this.lastName;
+    // }
 
     document.getElementById("demo").innerHTML = 
     myFather.age + " " + myMother.age + " " + 
-    myFather.nationality + " " + myFather.name();
+    myFather.nationality + " " + myFather.name()+ " " + myMother.name();
 </script>
 
 </body>
