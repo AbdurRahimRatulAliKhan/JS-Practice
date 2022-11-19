@@ -2285,7 +2285,7 @@ document.getElementById("demo").innerHTML = myString;
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2299,6 +2299,37 @@ const person = ["gaklsgks", "jdhjsdha", "jfdhgjsdahfj"];
 let myString = JSON.stringify(person);
 //document.getElementById("demo").innerHTML = myArray;
 document.getElementById("demo").innerHTML = myString;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+const person = {
+    firstName: "John",
+    lastName: "Kabir",
+//    language: "en",
+    language: "",
+//     get lang() {
+//         return this.language;
+//     }
+    set lang(lang) {
+        this.language = lang.toUpperCase();
+    }
+ };
+ person.lang = "en";
+    
+
+document.getElementById("demo").innerHTML = person.language;
 </script>
 
 </body>
