@@ -2369,7 +2369,7 @@ document.getElementById("demo").innerHTML = person.language;
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2407,6 +2407,56 @@ document.getElementById("demo").innerHTML = person.language;
     myFather.age + " " + myMother.age + " " + 
     myFather.nationality + " " + myFather.name()+ " " + 
     myMother.name();
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+        //this.nationality = "English";
+        this.name = function () {
+        return this.firstName + " " + this.lastName;
+    };
+    this.changeName = function (nameChange) {
+            this.lastName = nameChange;
+        };
+    }
+
+    Person.prototype.ageandeyecolor = function () {
+        return this.age + this.eyeColor;
+    };
+
+    Person.prototype.nationality = "English";
+
+    const myFather = new Person("John", "Kabir", 50, "Blue");
+    const myMother = new Person("John", "Doe", 40, "Blue");
+    //Person.prototype.nationality = "English";
+    myMother.changeName("DOEEE");
+    //myFather.nationality = "English";
+    // myFather.name = function () {
+    //     return this.firstName + " " + this.lastName;
+    // }
+
+    document.getElementById("demo").innerHTML = 
+    myFather.age + " " + myMother.age + " " + 
+    myFather.nationality + " " + myFather.name()+ " " + 
+    myMother.name() + " " + myMother.nationality + " " + myFather.ageandeyecolor();
 </script>
 
 </body>
