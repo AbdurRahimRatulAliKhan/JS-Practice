@@ -2465,7 +2465,7 @@ document.getElementById("demo").innerHTML = person.language;
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -2482,6 +2482,77 @@ document.getElementById("demo").innerHTML = person.language;
         txt += x + " ";
     }
 
+    document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    function myNumbers() {
+        let n = 0;
+        return {
+            next: function () {
+                n += 10;
+                return {value:n, done:false};
+            }
+        };
+    }
+
+    const n = myNumbers();
+    n.next();
+    n.next();
+    n.next();
+
+    document.getElementById("demo").innerHTML = n.next().value;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    myNumbers = {};
+    myNumbers[Symbol.iterator] = function () {
+        let n = 0;
+        done = false;
+        return {
+            next() {
+                n += 10;
+                if (n == 100) {done = true}
+                return {value:n, done:done};
+            }
+        }
+    }
+
+    let iterator = myNumbers[Symbol.iterator]();
+
+    let txt= "";
+    // for (const num of myNumbers) {
+    //     txt += num + " ";
+    // }
+    while (true) {
+        const result = iterator.next();
+        if (result.done) break;
+            txt += result.value + " ";
+    }
     document.getElementById("demo").innerHTML = txt;
 </script>
 
