@@ -2415,7 +2415,7 @@ document.getElementById("demo").innerHTML = person.language;
 
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2457,6 +2457,30 @@ document.getElementById("demo").innerHTML = person.language;
     myFather.age + " " + myMother.age + " " + 
     myFather.nationality + " " + myFather.name()+ " " + 
     myMother.name() + " " + myMother.nationality + " " + myFather.ageandeyecolor();
+</script>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    const name = "W3Schools";
+
+    let txt = "";
+    for (let x of name) {
+        txt += x + " ";
+    }
+
+    document.getElementById("demo").innerHTML = txt;
 </script>
 
 </body>
