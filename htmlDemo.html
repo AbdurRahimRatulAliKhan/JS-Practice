@@ -2473,10 +2473,12 @@ document.getElementById("demo").innerHTML = person.language;
 <p id="demo"></p>
 
 <script>
-    const name = "W3Schools";
+    // const name = "W3Schools";
+//    const name = ["a","b", "c"];
+    const name = [1,2,3,4,5];
 
     let txt = "";
-    for (let x of name) {
+    for (const x of name) {
         txt += x + " ";
     }
 
