@@ -2520,7 +2520,7 @@ document.getElementById("demo").innerHTML = person.language;
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2553,6 +2553,33 @@ document.getElementById("demo").innerHTML = person.language;
         if (result.done) break;
             txt += result.value + " ";
     }
+    document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    const letters = new Set(["a", "b", "c"]);
+    letters.add("d");
+
+    let txt = "";
+    letters.forEach(value => {
+        txt += value + " ";
+    });
+
+
+//    document.getElementById("demo").innerHTML = letters.size;
     document.getElementById("demo").innerHTML = txt;
 </script>
 
