@@ -2612,7 +2612,7 @@ document.getElementById("demo").innerHTML = person.language;
 </body>
 </html> -->
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2651,4 +2651,30 @@ document.getElementById("demo").innerHTML = total;
 </script>
 
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+const apples = {name: 'Apples'};
+const bananas = {name: 'Bananas'};
+const oranges = {name: 'Oranges'};
+
+
+const fruits = new Map();
+
+fruits.set(apples, 500);
+fruits.set(bananas, 300);
+fruits.set(oranges, 200);
+
+document.getElementById("demo").innerHTML = fruits.get(apples);
+</script>
+
+</body>
 </html>
+
