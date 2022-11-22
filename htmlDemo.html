@@ -2561,7 +2561,7 @@ document.getElementById("demo").innerHTML = person.language;
 
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2580,6 +2580,32 @@ document.getElementById("demo").innerHTML = person.language;
 
 
 //    document.getElementById("demo").innerHTML = letters.size;
+//    document.getElementById("demo").innerHTML = txt;
+    document.getElementById("demo").innerHTML = letters.values();
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    const letters = new Set(["a", "b", "c"]);
+    letters.add("d");
+    const iterator = letters.entries();
+
+    let txt = "";
+    for (const eachValue of iterator) {
+        txt += eachValue + " ";
+    }
+
     document.getElementById("demo").innerHTML = txt;
 </script>
 
