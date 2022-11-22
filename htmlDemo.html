@@ -2589,7 +2589,7 @@ document.getElementById("demo").innerHTML = person.language;
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -2607,6 +2607,47 @@ document.getElementById("demo").innerHTML = person.language;
     }
 
     document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+    const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+    ]);
+//    const fruits = new Map();
+
+    fruits.set("apples", 400);
+    fruits.set("bananas", 200);
+    fruits.set("oranges", 100);
+
+//    let txt = "";
+    let total = 0;
+    // fruits.forEach((value, key) => {
+    //     txt += key + " = " + value + " ";
+    // });
+    // for (const x of fruits.entries()) {
+    //     txt += x + " ";
+    // }
+    // for (const x of fruits.keys()) {
+    //     txt += x + " ";
+    // }
+    for (const x of fruits.values()) {
+        total += x;
+    }
+//    document.getElementById("demo").innerHTML = fruits.get("apples");
+document.getElementById("demo").innerHTML = total;
 </script>
 
 </body>
