@@ -2653,7 +2653,7 @@ document.getElementById("demo").innerHTML = total;
 </body>
 </html> -->
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2676,5 +2676,26 @@ document.getElementById("demo").innerHTML = fruits.get(apples);
 </script>
 
 </body>
-</html>
+</html> -->
 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "EN" 
+};
+
+Object.defineProperty(person, "language", {value: "BN"});
+document.getElementById("demo").innerHTML =
+person.language;
+</script>
+
+</body>
+</html>
