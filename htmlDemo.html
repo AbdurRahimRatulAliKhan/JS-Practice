@@ -2714,11 +2714,17 @@ const person = {
   language: "EN" 
 };
 
+// // Change Property
+// Object.defineProperty(person, "language", {enumerable:false});
+
+// // Display Properties
+// document.getElementById("demo").innerHTML = Object.getOwnPropertyNames(person);
+
 // Change Property
 Object.defineProperty(person, "language", {enumerable:false});
 
 // Display Properties
-document.getElementById("demo").innerHTML = Object.getOwnPropertyNames(person);
+document.getElementById("demo").innerHTML = Object.keys(person);
 </script>
 
 </body>
