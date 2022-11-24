@@ -2679,7 +2679,7 @@ document.getElementById("demo").innerHTML = fruits.get(apples);
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -2695,6 +2695,30 @@ const person = {
 Object.defineProperty(person, "language", {value: "BN"});
 document.getElementById("demo").innerHTML =
 person.language;
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "EN" 
+};
+
+// Change Property
+Object.defineProperty(person, "language", {enumerable:false});
+
+// Display Properties
+document.getElementById("demo").innerHTML = Object.getOwnPropertyNames(person);
 </script>
 
 </body>
