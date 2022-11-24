@@ -2731,7 +2731,7 @@ document.getElementById("demo").innerHTML = Object.keys(person);
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -2744,8 +2744,31 @@ const person = {
   language: "EN" 
 };
 
-Object.defineProperty(person, "year", {value: "2008"});
+Object.defineProperty(person, "year", {value: "2009"});
 document.getElementById("demo").innerHTML = person.year;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+const person = {firstName: "John", lastName: "Doe"};
+
+Object.defineProperty(person, "fullName", {
+    get: function () {
+        return this.firstName + " " + this.lastName;
+    }
+    });
+
+    document.getElementById("demo").innerHTML = person.fullName;
 </script>
 
 </body>
