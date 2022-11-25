@@ -2752,7 +2752,7 @@ document.getElementById("demo").innerHTML = person.year;
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2769,6 +2769,107 @@ Object.defineProperty(person, "fullName", {
     });
 
     document.getElementById("demo").innerHTML = person.fullName;
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    // var x = myFunction(4, 3);
+    // document.getElementById("demo").innerHTML = x;
+
+    // function myFunction(a, b) {
+    //     return a * b;
+    // }
+
+    // const x = function (a, b) {
+    //     return a * b;
+    // }
+
+    // let z = x(4, 5);
+
+    // const myFunction = new Function("a", "b", "return a * b");
+    // let z = myFunction(5, 5);
+
+    const myFunction = function (a, b) {return a * b;}
+    document.getElementById("demo").innerHTML = myFunction(45, 5);
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    (function () {
+        document.getElementById("demo").innerHTML = "Hello! Kelly";
+    })();
+</script>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction(a, b) {
+        return a * b;
+    }
+
+    let x = myFunction(8578, 758) / 2;
+    document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction(a, b) {
+        return arguments.length;
+    }
+
+    document.getElementById("demo").innerHTML = 
+    typeof(myFunction(4, 7).toString());
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    const x = (x, y) => {return x * y};
+    document.getElementById("demo").innerHTML = x(555, 66);
 </script>
 
 </body>
