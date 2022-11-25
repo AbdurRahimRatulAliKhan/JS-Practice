@@ -2860,7 +2860,7 @@ Object.defineProperty(person, "fullName", {
 </body>
 </html> -->
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2870,6 +2870,47 @@ Object.defineProperty(person, "fullName", {
 <script>
     const x = (x, y) => {return x * y};
     document.getElementById("demo").innerHTML = x(555, 66);
+</script>
+
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction(x, y) {
+        if (y === undefined) {
+            y == 2;
+        }
+        return x * y;
+    }
+
+    document.getElementById("demo").innerHTML = 
+    myFunction(4, "f");
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction(x, y = 10) {
+        return x + y;
+    }
+    document.getElementById("demo").innerHTML = myFunction(5);
 </script>
 
 </body>
