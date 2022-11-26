@@ -2916,7 +2916,7 @@ Object.defineProperty(person, "fullName", {
 </body>
 </html> -->
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -2933,6 +2933,33 @@ Object.defineProperty(person, "fullName", {
     let x= sum(4, 9, 16, 25, 29, 100, 66, 77);
 
     document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    function maxValue() {
+        let max = -Infinity;
+        for (let index = 0; index < arguments.length; index++) {
+            //if (max > arguments[index]) {
+            if (arguments[index] > max) {
+                max = arguments[index];
+            }
+        }
+        return max;
+    }
+
+    document.getElementById("demo").innerHTML = 
+    maxValue(4, 5, 6, 7, 9);
 </script>
 
 </body>
